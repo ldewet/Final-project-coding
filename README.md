@@ -7,6 +7,7 @@ The format for running the function is:
 together_timepoints(datafile, templatefile, plottitle, graphname)
 
 where:
+
 datafile is the .csv file containing the well number and threshold cycle number.
 
 templatefile is the .csv file containing the template of the plate. The gene name, treatment, timepoint and whether it is a housekeepign gene should be separated by a "-".
