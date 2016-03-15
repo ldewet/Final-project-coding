@@ -3,12 +3,9 @@ together_timepoints <- function(datafile, templatefile, plottitle, graphname){
   #import dplyr
   library(dplyr)
   
-  #Set working directory to folder with files
-  #setwd("/Users/Lari/Documents/UChicago/Winter 2016/Computing")
-  
   #read data
-  PCRdata <- read.table("Data.csv", sep = ",", na.strings = "N/A", stringsAsFactors = FALSE)
-  template <- read.table("Template_1V4.csv", stringsAsFactors = FALSE, header = TRUE, sep = ",", 
+  PCRdata <- read.table(datafile, sep = ",", na.strings = "N/A", stringsAsFactors = FALSE)
+  template <- read.table(templatefile, stringsAsFactors = FALSE, header = TRUE, sep = ",", 
                          row.names = 1)
   
   #delete the headers
